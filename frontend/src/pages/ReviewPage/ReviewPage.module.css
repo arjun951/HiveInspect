@@ -1,0 +1,144 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #F8FAFC;
+  color: #0F172A;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+  height: 56px;
+  min-height: 56px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.headerMeta {
+  font-size: 13px;
+  color: #64748B;
+  flex: 1;
+}
+
+.confirmBtn {
+  padding: 8px 18px;
+  background: #4F46E5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.confirmBtn:hover {
+  background: #4338CA;
+}
+
+.banners {
+  padding: 12px 24px 0;
+  flex-shrink: 0;
+}
+
+.invalidBanner {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #F8FAFC;
+  color: #0F172A;
+  gap: 16px;
+}
+
+.successTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+.successId {
+  font-size: 13px;
+  color: #64748B;
+}
+
+.startOverBtn {
+  padding: 10px 24px;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  color: #475569;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.startOverBtn:hover {
+  border-color: #4F46E5;
+  color: #4F46E5;
+}
+
+/* ── Responsive: mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+
+  .page {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .header {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 56px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .headerMeta {
+    width: 100%;
+    order: 3;
+    flex: none;
+  }
+
+  .body {
+    flex-direction: column;
+    overflow: visible;
+    flex: none;
+  }
+
+  .banners {
+    padding: 12px 16px 0;
+  }
+}
