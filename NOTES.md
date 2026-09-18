@@ -1,6 +1,6 @@
 # Project Notes
 
-This project was built over approximately two focused days (~16 hours), covering product exploration, implementation, and write-up. The repository is a single snapshot commit rather than incremental history; that is noted upfront so reviewers are not misled.
+This project was built over approximately two focused days (~16 hours), covering product exploration, implementation, and write-up.
 
 ## What was built
 
@@ -57,3 +57,7 @@ One specific improvement Hive could make: show the user a column-mapping screen 
 Built with Express, Create React App, SheetJS (`xlsx`), and `@supabase/supabase-js`. Cursor was used as the coding assistant throughout. No model is used in the import path — all mapping and validation is rule-based.
 
 Database schema: `schema.sql`.
+
+### Extra Note
+
+The repository is a single snapshot commit rather than incremental history. I forgot to push it.
