@@ -17,7 +17,6 @@ Spectora HTML-text spreadsheet → structured templates (sections / items / comm
 - Editor: names + comment text only. Severity and other stored fields are out of scope.
 - Default photos: only Default Photo 1 is stored. 2–10 are unsupported; no image gallery in the UI.
 - Skipped-row list is not persisted after confirm (only `import_flags` remain).
-- `/api/names` is leftover scaffolding, not product.
 
 ## Input and limits
 
